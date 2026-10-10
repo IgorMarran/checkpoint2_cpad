@@ -2,7 +2,6 @@ import { useState } from 'react';
 import {
   Button,
   FlatList,
-  SafeAreaView,
   StyleSheet,
   Text,
   TextInput,
@@ -27,7 +26,7 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <StatusBar style="auto" />
       <Text style={styles.titulo}>Lista de Compras</Text>
 
@@ -54,7 +53,7 @@ export default function App() {
           <Text style={styles.vazio}>Nenhum item na lista ainda.</Text>
         }
       />
-    </SafeAreaView>
+    </View>
   );
 }
 
